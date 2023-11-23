@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* NAV SECTION START */
+nav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px #0000001a;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  z-index: 9999;
+}
+nav .logo {
+  font-weight: 900;
+  font-size: 25px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+nav ul li a:hover {
+  background-color: #ebebeb;
+}
+.icon-list {
+  font-size: 25px;
+  display: none;
+}
+/* NAV SECTION END */
+
+/* TITLE HEADER SECTION START*/
+.title-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+}
+.title-header h1 {
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+.title-header h4 {
+  font-weight: 300;
+}
+/* TITLE HEADER SECTION END */
+
+/* BANNER SECTION START*/
+.banner-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem;
+  padding: 80px;
+}
+.image {
+  display: block;
+}
+.image img {
+  width: 150%;
+  border-radius: 10px;
+}
+.review-section p {
+  padding: 50px 0 50px 30px;
+  font-weight: 100;
+  font-style: italic;
+}
+.user {
+  display: flex;
+  margin-left: 20px;
+}
+.user img {
+  width: 50px;
+  height: fit-content;
+}
+.user h1 {
+  padding-left: 30px;
+  font-size: 20px;
+}
+.user h1 span {
+  font-size: small;
+  font-weight: 100;
+  font-style: italic;
+}
+/* BANNER SECTION END*/
+
+/* FORM SECTION START */
+.form-section {
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.form-section .container-form {
+  padding: 50px;
+}
+.container-form h1 {
+  font-size: 30px;
+}
+.container-form h5 {
+  font-weight: 300;
+  padding-top: 20px;
+}
+.container-form form {
+  display: flex;
+  font-weight: 800;
+  flex-direction: column;
+}
+.container-form .label-name {
+  padding: 40px 0 10px;
+}
+.container-form input {
+  padding: 10px;
+}
+.container-form .custom-select {
+  position: relative;
+  height: 50px;
+}
+.container-form .custom-select select {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+.container-form .custom-select:before {
+  content: " ";
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  border: 8px solid;
+  border-color: #000000 transparent transparent transparent;
+  pointer-events: none;
+}
+.container-form #btn {
+  margin-top: 30px;
+  height: 50px;
+  background-color: #000000;
+  color: #fff;
+}
+.error-message {
+  color: red;
+  font-weight: 300;
+  font-size: 15px;
+}
+/* FORM SECTION START */
+
+/* FOOTER SECTION START*/
+footer {
+  background-color: #fff;
+  box-shadow: 0px 1px 10px rgba(117, 116, 116, 0.3);
+  color: #333030;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+footer h1 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 10px;
+}
+/* FOOTER SECTION end*/
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 820px) {
+  nav {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  nav ul {
+    padding-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul.hidden {
+    display: none;
+  }
+  .icon-list {
+    display: flex;
+  }
+  .title-header h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+  .banner-section {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 2rem;
+  }
+  .image {
+    width: 100%;
+    height: fit-content;
+  }
+  .image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .review-section p {
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+  }
+}
